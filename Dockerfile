@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER justxcy@gmail.com
 
 ADD https://github.com/shadowsocks/shadowsocks-go/releases/download/1.2.1/shadowsocks-server.tar.gz /sserver
-RUN mv /sserver/shadowsocks-server /shadowsocks-server
+RUN tar -xzvf /sserver 
 # ADD shadowsocks-server /shadowsocks-server
 RUN chmod +x /shadowsocks-server
 COPY endpoint-start.sh /run.sh
