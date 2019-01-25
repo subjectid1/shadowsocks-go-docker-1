@@ -5,7 +5,7 @@ ADD https://github.com/shadowsocks/shadowsocks-go/releases/download/1.2.1/shadow
 RUN tar -xzvf /sserver 
 # ADD shadowsocks-server /shadowsocks-server
 RUN chmod +x /shadowsocks-server
-COPY endpoint-start.sh /run.sh
+COPY endpoint-start.sh /endpoint-start.sh
 ENV PASSWORD docker
 ENV PORT 8374
 ENV METHOD aes-128-cfb
