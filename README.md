@@ -9,6 +9,7 @@ docker run -d  -p 8375:8375 -e PORT=8375 -e PASSWORD=Your-password -e METHOD=cha
 
 其他参数
 
+'''
 Usage of ./shadowsocks-server:
   -c string
         specify config file (default "config.json")
@@ -26,3 +27,4 @@ Usage of ./shadowsocks-server:
   -u    UDP Relay
   -version
         print version
+'''
